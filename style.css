@@ -1,0 +1,123 @@
+html {
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --dark-cyan: 158, 36%, 37%;
+  --cream: 30, 38%, 92%;
+  --very-dark-blue: 212, 21%, 14%;
+  --dark-grayish-blue: 228, 12%, 48%;
+
+  font-size: 14px;
+}
+*,
+*::after,
+*::before {
+  margin: 0px;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 95vh;
+}
+main {
+  width: 672px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.img {
+    background-image: url(/images/image-product-desktop.jpg);
+    border-radius: 20px 0px 0px 20px;
+    height: 100%;
+    background-size: cover;
+}
+.desc {
+    padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: hsl(var(--very-dark-blue));
+}
+.title {
+  letter-spacing: 5px;
+  color: hsl(var(--dark-grayish-blue));
+}
+h2 {
+  font-size: 2.5rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+footer {
+    place-self: end center;
+}
+.description {
+    color: hsl(var(--dark-grayish-blue));
+    
+}
+.price{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.price span:first-child{
+    font-family: "Fraunces", serif;
+    font-size: 3rem;
+    color: hsl(var(--dark-cyan));
+    font-weight: 700;
+    
+}
+.price span:nth-child(2){
+    color: hsl(var(--dark-grayish-blue));
+    text-decoration: line-through;
+    
+}
+button{
+    display: flex;
+    color: hsl(var(--cream));
+    font-weight: 700;
+    background-color: hsl(var(--dark-cyan));
+    padding: 1rem 5rem;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+button:hover,
+button:focus-visible{
+    background-color: hsl(158, 36%, 20%);
+    
+}
+
+@media ( max-width:601px ) {
+    html{
+        font-size: 10px;
+    }
+    body{
+        place-items: start center;
+        padding: 20px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr;
+    width: 100%;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+    
+    .img {
+        background-image: url(/images/image-product-mobile.jpg);
+        border-radius: 10px 10px 0px 0px;
+        height: 300px;
+        background-size: cover;
+        object-fit: contain;
+    }
+}
