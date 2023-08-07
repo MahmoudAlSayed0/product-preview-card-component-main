@@ -30,7 +30,7 @@ main {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .img {
-    background-image: url(./images/image-product-desktop.jpg);
+    background-image: url(images/image-product-desktop.jpg);
     border-radius: 20px 0px 0px 20px;
     height: 100%;
     background-size: cover;
@@ -114,7 +114,7 @@ button:focus-visible{
 
     
     .img {
-        background-image: url(./images/image-product-mobile.jpg);
+        background-image: url(images/image-product-mobile.jpg);
         border-radius: 10px 10px 0px 0px;
         height: 300px;
         background-size: cover;
